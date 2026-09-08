@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 01 - Home Mobile</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/button.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Mobile -->
+  <header class="nav">
+    <div class="nav__logo">HABIT</div>
+    <div class="nav__actions">
+      <input type="text" class="nav__search" placeholder="Pesquisar...">
+      <button class="button button--secondary">Buscar</button>
+      <button class="button button--secondary">Entrar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    
+    <!-- Hero / Apresentação -->
+    <section class="hero">
+      <h2>Navegue por tópicos de interesse</h2>
+      <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+      <div class="hero__buttons">
+        <button class="button button--primary">Explorar categorias</button>
+        <button class="button button--secondary">Assine a newsletter</button>
+      </div>
+      <!-- Placeholder de Imagem do Hero -->
+      <div class="card__image" style="margin-top: 16px; height: 180px;"></div>
+    </section>
+
+    <!-- Categorias Populares -->
+    <section class="section">
+      <h3>Categorias Populares</h3>
+      <div class="category-grid" style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px;">
+        <div class="card" style="padding: 16px; font-weight: bold;">Work</div>
+        <div class="card" style="padding: 16px; font-weight: bold;">Books</div>
+        <div class="card" style="padding: 16px; font-weight: bold;">Techno</div>
+      </div>
+    </section>
+
+    <!-- Todas as Categorias -->
+    <section class="section">
+      <h3>Todas as Categorias</h3>
+      <div class="category-tags" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
+        <span class="button button--secondary" style="width: auto;">Negócios</span>
+        <span class="button button--secondary" style="width: auto;">Techno</span>
+        <span class="button button--secondary" style="width: auto;">Produtividade</span>
+        <span class="button button--secondary" style="width: auto;">Filmes</span>
+        <span class="button button--secondary" style="width: auto;">Lifestyle</span>
+        <span class="button button--secondary" style="width: auto;">Educação</span>
+        <span class="button button--secondary" style="width: auto;">Mailing</span>
+        <span class="button button--secondary" style="width: auto;">eCommerce</span>
+        <span class="button button--secondary" style="width: auto;">Alimentação</span>
+        <span class="button button--secondary" style="width: auto;">Social</span>
+      </div>
+    </section>
+
+    <!-- Postagens em Destaque -->
+    <section class="section">
+      <h3>Postagens em Destaque</h3>
+      
+      <article class="card card--compact" style="display: flex; gap: 12px; padding: 12px; align-items: center; margin-top: 8px;">
+        <div class="card__image" style="width: 80px; height: 80px; flex-shrink: 0;"></div>
+        <div class="card__content" style="padding: 0;">
+          <span class="card__meta">2026 - Destaque</span>
+          <h4 class="card__title" style="font-size: 14px;">Erros de Design que Todos Devem Evitar</h4>
+          <span class="card__read-time">3 min de leitura</span>
+        </div>
+      </article>
+
+      <article class="card card--compact" style="display: flex; gap: 12px; padding: 12px; align-items: center;">
+        <div class="card__image" style="width: 80px; height: 80px; flex-shrink: 0;"></div>
+        <div class="card__content" style="padding: 0;">
+          <span class="card__meta">2026 - Destaque</span>
+          <h4 class="card__title" style="font-size: 14px;">As Maiores Empresas por Receita</h4>
+        </div>
+      </article>
+    </section>
+
+    <!-- Escolhas do Editor -->
+    <section class="section" style="background-color: #fff; padding: 16px; border: 1px solid var(--color-border); border-radius: 8px;">
+      <h3>Escolhas do Editor</h3>
+      <ul style="margin-top: 8px; padding-left: 20px; font-size: 14px;">
+        <li>O uso negativo da internet</li>
+        <li>O segredo do brainstorm</li>
+        <li>Escalar para pequenos negócios</li>
+        <li>O futuro do trabalho remoto</li>
+      </ul>
+    </section>
+
+    <!-- Footer Tags -->
+    <section class="section" style="display: flex; flex-wrap: wrap; gap: 8px;">
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Instagram</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Work</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Bags</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Lamp</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Books</span>
+    </section>
+
+  </main>
+
+  <footer style="padding: 16px; font-size: 12px; color: var(--color-text-muted); text-align: center;">
+     2026 - Usabilidade, desenvolvimento web, mobile & jogos
+  </footer>
+
+</body>
+</html>

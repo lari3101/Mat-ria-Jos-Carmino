@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 04 - Newsletter Mobile</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/button.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Mobile -->
+  <header class="nav">
+    <div class="nav__logo">HABIT</div>
+    <div class="nav__actions">
+      <input type="text" class="nav__search" placeholder="Pesquisar...">
+      <button class="button button--secondary">Buscar</button>
+      <button class="button button--secondary">Entrar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    
+    <!-- Card do Formulário de Newsletter -->
+    <section class="form" style="background-color: #fff; padding: 24px 16px; border: 1px solid var(--color-border); border-radius: 8px; margin-top: 20px;">
+      <h2 style="font-size: 22px; margin-bottom: 16px;">Assine a newsletter</h2>
+      
+      <div class="form__group" style="margin-bottom: 12px;">
+        <input type="email" id="email" class="form__input" placeholder="E-mail">
+      </div>
+
+      <div class="form__checkbox-group" style="margin-bottom: 16px; align-items: flex-start;">
+        <input type="checkbox" id="termos" style="margin-top: 3px;">
+        <label for="termos" style="font-size: 12px; color: var(--color-text-main);">
+          Concordo em receber comunicações e li a política de privacidade.
+        </label>
+      </div>
+
+      <button type="button" class="button button--primary" style="align-self: flex-start; padding: 8px 20px;">
+        Assinar
+      </button>
+    </section>
+
+    <!-- Footer Tags -->
+    <section class="section" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px;">
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Instagram</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Work</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Bags</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Lamp</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Books</span>
+    </section>
+
+  </main>
+
+  <footer style="padding: 16px; font-size: 12px; color: var(--color-text-muted); text-align: center;">
+    2026 - Usabilidade, desenvolvimento web, mobile & jogos
+  </footer>
+
+</body>
+</html>

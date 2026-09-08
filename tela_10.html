@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 10 - Admin / Fila de Comentários Mobile</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/button.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Mobile -->
+  <header class="nav">
+    <div class="nav__logo">HABIT</div>
+    <div class="nav__actions">
+      <input type="text" class="nav__search" placeholder="Pesquisar...">
+      <button class="button button--secondary">Buscar</button>
+      <button class="button button--secondary">Entrar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+
+    <!-- Menu do Painel Admin -->
+    <section class="card" style="padding: 16px;">
+      <h3 style="margin-bottom: 12px; font-size: 16px;">Menu</h3>
+      <ul style="display: flex; flex-direction: column; gap: 8px; padding-left: 20px; font-size: 14px; color: var(--color-text-main);">
+        <li>Categorias</li>
+        <li>Criar Post</li>
+        <li>Escolhas do Editor</li>
+        <li>Usuários</li>
+        <li>Fila de revisão</li>
+        <li><strong>Fila de comentários</strong></li>
+      </ul>
+    </section>
+
+    <!-- Métricas / Indicadores (Grid 2x2 no Mobile) -->
+    <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Posts</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">128</strong>
+      </div>
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Visualizações</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">54k</strong>
+      </div>
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Inscritos</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">12k</strong>
+      </div>
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Pendências</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">7</strong>
+      </div>
+    </section>
+
+    <!-- Fila de Comentários -->
+    <section class="card" style="padding: 16px;">
+      <h3 style="margin-bottom: 12px; font-size: 18px;">Fila de comentários</h3>
+
+      <!-- Campo de Busca -->
+      <div style="margin-bottom: 16px;">
+        <input type="text" class="form__input" placeholder="Buscar comentários...">
+      </div>
+
+      <!-- Lista de Comentários em Revisão (Layout Adaptado para Mobile) -->
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+
+        <div style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <strong style="display: block; font-size: 14px;">Comentário #1</strong>
+            <span style="font-size: 12px; color: var(--color-text-muted);">Usuário 1</span>
+            <div style="font-size: 11px; color: #d97706; margin-top: 2px;">Em revisão</div>
+          </div>
+          <div style="display: flex; gap: 6px;">
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Aprovar</button>
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Reprovar</button>
+          </div>
+        </div>
+
+        <div style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <strong style="display: block; font-size: 14px;">Comentário #2</strong>
+            <span style="font-size: 12px; color: var(--color-text-muted);">Usuário 2</span>
+            <div style="font-size: 11px; color: #d97706; margin-top: 2px;">Em revisão</div>
+          </div>
+          <div style="display: flex; gap: 6px;">
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Aprovar</button>
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Reprovar</button>
+          </div>
+        </div>
+
+        <div style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <strong style="display: block; font-size: 14px;">Comentário #3</strong>
+            <span style="font-size: 12px; color: var(--color-text-muted);">Usuário 3</span>
+            <div style="font-size: 11px; color: #d97706; margin-top: 2px;">Em revisão</div>
+          </div>
+          <div style="display: flex; gap: 6px;">
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Aprovar</button>
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Reprovar</button>
+          </div>
+        </div>
+
+        <div style="border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <strong style="display: block; font-size: 14px;">Comentário #4</strong>
+            <span style="font-size: 12px; color: var(--color-text-muted);">Usuário 4</span>
+            <div style="font-size: 11px; color: #d97706; margin-top: 2px;">Em revisão</div>
+          </div>
+          <div style="display: flex; gap: 6px;">
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Aprovar</button>
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Reprovar</button>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <strong style="display: block; font-size: 14px;">Comentário #5</strong>
+            <span style="font-size: 12px; color: var(--color-text-muted);">Usuário 5</span>
+            <div style="font-size: 11px; color: #d97706; margin-top: 2px;">Em revisão</div>
+          </div>
+          <div style="display: flex; gap: 6px;">
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Aprovar</button>
+            <button class="button button--secondary" style="padding: 4px 8px; font-size: 12px; width: auto;">Reprovar</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Tags -->
+    <section class="section" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Instagram</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Work</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Bags</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Lamp</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Books</span>
+    </section>
+
+  </main>
+
+  <footer style="padding: 16px; font-size: 12px; color: var(--color-text-muted); text-align: center;">
+    2026 - Usabilidade, desenvolvimento web, mobile & jogos
+  </footer>
+
+</body>
+</html>

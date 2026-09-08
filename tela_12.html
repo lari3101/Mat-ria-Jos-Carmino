@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 12 - Entrar Mobile</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/button.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Mobile -->
+  <header class="nav">
+    <div class="nav__logo">HABIT</div>
+    <div class="nav__actions">
+      <input type="text" class="nav__search" placeholder="Pesquisar...">
+      <button class="button button--secondary">Buscar</button>
+      <button class="button button--secondary">Entrar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+
+    <!-- Card Login -->
+    <section class="card" style="padding: 24px 16px;">
+      <h2 style="font-size: 22px; font-weight: bold; margin-bottom: 20px; color: var(--color-text-main);">Entrar</h2>
+
+      <form class="form" style="display: flex; flex-direction: column; gap: 14px;">
+        
+        <!-- Campo E-mail -->
+        <div class="form__group">
+          <input type="email" class="form__input" placeholder="E-mail">
+        </div>
+
+        <!-- Campo Senha -->
+        <div class="form__group">
+          <input type="password" class="form__input" placeholder="Senha">
+        </div>
+
+        <!-- Botões de Ação -->
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+          <button type="submit" class="button button--primary">Entrar</button>
+          <button type="button" class="button button--secondary">Entrar com Google</button>
+        </div>
+
+        <!-- Links Auxiliares -->
+        <div style="font-size: 13px; color: var(--color-text-muted); text-align: center; margin-top: 8px;">
+          <a href="#" style="color: var(--color-text-muted); text-decoration: none;">Esqueci a senha</a>
+          <span style="margin: 0 4px;">•</span>
+          <a href="#" style="color: var(--color-text-muted); text-decoration: none;">Criar conta</a>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- Footer Tags -->
+    <section class="section" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Instagram</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Work</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Bags</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Lamp</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Books</span>
+    </section>
+
+  </main>
+
+  <footer style="padding: 16px; font-size: 12px; color: var(--color-text-muted); text-align: center;">
+    2026 - Usabilidade, desenvolvimento web, mobile & jogos
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 14 - Perfil / Suas Postagens Mobile</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/button.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Mobile -->
+  <header class="nav">
+    <div class="nav__logo">HABIT</div>
+    <div class="nav__actions">
+      <input type="text" class="nav__search" placeholder="Pesquisar...">
+      <button class="button button--secondary">Buscar</button>
+      <button class="button button--secondary">Entrar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+
+    <!-- Card Perfil -->
+    <section class="card" style="padding: 16px;">
+      <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 12px; color: var(--color-text-main);">Perfil</h3>
+
+      <div style="width: 100%; height: 120px; background-color: #e5e7eb; border-radius: 6px; margin-bottom: 12px;"></div>
+
+      <form class="form" style="display: flex; flex-direction: column; gap: 10px;">
+        <div class="form__group">
+          <input type="text" class="form__input" placeholder="Nome">
+        </div>
+
+        <div class="form__group">
+          <input type="text" class="form__input" placeholder="Bio">
+        </div>
+
+        <button type="submit" class="button button--primary" style="width: 100%; margin-top: 4px;">Salvar</button>
+      </form>
+    </section>
+
+    <!-- Lista - Suas Postagens -->
+    <section style="margin-top: 20px;">
+      <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 12px; color: var(--color-text-main);">Suas Postagens</h3>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        
+        <!-- Post 1 -->
+        <article class="card" style="padding: 12px; display: flex; gap: 12px; align-items: center;">
+          <div style="width: 70px; height: 50px; background-color: #e5e7eb; border-radius: 4px; flex-shrink: 0;"></div>
+          <div>
+            <span style="font-size: 11px; color: var(--color-text-muted); display: block;">Rascunho</span>
+            <strong style="font-size: 15px;">Post 1</strong>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="card" style="padding: 12px; display: flex; gap: 12px; align-items: center;">
+          <div style="width: 70px; height: 50px; background-color: #e5e7eb; border-radius: 4px; flex-shrink: 0;"></div>
+          <div>
+            <span style="font-size: 11px; color: var(--color-text-muted); display: block;">Publicado</span>
+            <strong style="font-size: 15px;">Post 2</strong>
+          </div>
+        </article>
+
+        <!-- Comentário 1 -->
+        <article class="card" style="padding: 12px; display: flex; gap: 12px; align-items: center;">
+          <div style="width: 70px; height: 50px; background-color: #e5e7eb; border-radius: 4px; flex-shrink: 0;"></div>
+          <div>
+            <span style="font-size: 11px; color: var(--color-text-muted); display: block;">Em análise</span>
+            <strong style="font-size: 15px;">Comentário 1</strong>
+          </div>
+        </article>
+
+        <!-- Comentário 2 -->
+        <article class="card" style="padding: 12px; display: flex; gap: 12px; align-items: center;">
+          <div style="width: 70px; height: 50px; background-color: #e5e7eb; border-radius: 4px; flex-shrink: 0;"></div>
+          <div>
+            <span style="font-size: 11px; color: var(--color-text-muted); display: block;">Publicado</span>
+            <strong style="font-size: 15px;">Comentário 2</strong>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Footer Tags -->
+    <section class="section" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px;">
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Instagram</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Work</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Bags</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Lamp</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Books</span>
+    </section>
+
+  </main>
+
+  <footer style="padding: 16px; font-size: 12px; color: var(--color-text-muted); text-align: center;">
+    2026 - Usabilidade, desenvolvimento web, mobile & jogos
+  </footer>
+
+</body>
+</html>

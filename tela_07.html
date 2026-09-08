@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 07 - Admin / Escolhas do Editor Mobile</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/button.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Mobile -->
+  <header class="nav">
+    <div class="nav__logo">HABIT</div>
+    <div class="nav__actions">
+      <input type="text" class="nav__search" placeholder="Pesquisar...">
+      <button class="button button--secondary">Buscar</button>
+      <button class="button button--secondary">Entrar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+
+    <!-- Menu do Painel Admin -->
+    <section class="card" style="padding: 16px;">
+      <h3 style="margin-bottom: 12px; font-size: 16px;">Menu</h3>
+      <ul style="display: flex; flex-direction: column; gap: 8px; padding-left: 20px; font-size: 14px; color: var(--color-text-main);">
+        <li>Categorias</li>
+        <li>Criar Post</li>
+        <li><strong>Escolhas do Editor</strong></li>
+        <li>Usuários</li>
+        <li>Fila de revisão</li>
+        <li>Fila de comentários</li>
+      </ul>
+    </section>
+
+    <!-- Métricas / Indicadores (Grid 2x2 no Mobile) -->
+    <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Posts</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">128</strong>
+      </div>
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Visualizações</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">54k</strong>
+      </div>
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Inscritos</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">12k</strong>
+      </div>
+      <div class="card" style="padding: 12px; text-align: center;">
+        <span style="font-size: 11px; color: var(--color-text-muted);">Pendências</span>
+        <strong style="display: block; font-size: 20px; margin-top: 4px;">7</strong>
+      </div>
+    </section>
+
+    <!-- Escolhas do Editor -->
+    <section class="card" style="padding: 16px;">
+      <h3 style="margin-bottom: 12px; font-size: 18px;">Escolhas do Editor</h3>
+
+      <!-- Busca de Posts -->
+      <div style="margin-bottom: 16px;">
+        <input type="text" class="form__input" placeholder="Buscar posts...">
+      </div>
+
+      <div style="border-bottom: 1px solid var(--color-border); padding-bottom: 8px; margin-bottom: 8px;">
+        <strong style="font-size: 13px;">Post</strong>
+      </div>
+
+      <!-- Lista de Posts com Ações (Remover / Agendar) -->
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
+          <span style="font-size: 14px;">Post #1</span>
+          <button class="button button--secondary" style="padding: 4px 12px; font-size: 12px; width: auto;">Remover</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
+          <span style="font-size: 14px;">Post #2</span>
+          <button class="button button--secondary" style="padding: 4px 12px; font-size: 12px; width: auto;">Agendar</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
+          <span style="font-size: 14px;">Post #3</span>
+          <button class="button button--secondary" style="padding: 4px 12px; font-size: 12px; width: auto;">Agendar</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px;">
+          <span style="font-size: 14px;">Post #4</span>
+          <button class="button button--secondary" style="padding: 4px 12px; font-size: 12px; width: auto;">Remover</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 14px;">Post #5</span>
+          <button class="button button--secondary" style="padding: 4px 12px; font-size: 12px; width: auto;">Agendar</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Tags -->
+    <section class="section" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Instagram</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Work</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Bags</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Lamp</span>
+      <span class="button button--secondary" style="width: auto; font-size: 12px;">Books</span>
+    </section>
+
+  </main>
+
+  <footer style="padding: 16px; font-size: 12px; color: var(--color-text-muted); text-align: center;">
+    2026 - Usabilidade, desenvolvimento web, mobile & jogos
+  </footer>
+
+</body>
+</html>
